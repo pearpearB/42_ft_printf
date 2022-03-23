@@ -6,7 +6,7 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 13:26:03 by jabae             #+#    #+#             */
-/*   Updated: 2022/03/22 01:17:49 by jabae            ###   ########.fr       */
+/*   Updated: 2022/03/23 00:26:32 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,20 @@
 
 #include <unistd.h>
 #include <stdarg.h>
+#include <stdlib.h>
 
 int	ft_printf(const char *format, ...);
 int	ft_switch_format(va_list ap, const char *format, int *idx);
-int	ft_putchar_count(char c);
-int	ft_count_digit(int num);
+
 size_t	ft_strlen(const char *str);
-size_t ft_putstr_count(char *str);
-void	ft_putnbr_fd(int n, int fd);
+void	ft_putnbr_fd(long long num, int fd);
+char	*ft_make_hexbase(char c);
+
+size_t	ft_putstr_count(char *str);
+int		ft_putchar_count(char c);
+int		ft_putint_count(int num);
+int		ft_putunsignedint_count(unsigned long long num);
+int		ft_puthex_count(unsigned int num, char *hexbase);
+int		ft_putpointer_count(unsigned long long num, char *hexbase);
 
 #endif
