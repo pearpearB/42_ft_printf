@@ -1,6 +1,6 @@
 .history
 .vscode
-ft_printf_tester
-printfTester
+ft_printf_tester/
+printfTester/
 test.c
 a.out
