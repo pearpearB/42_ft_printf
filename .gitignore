@@ -1,3 +1,4 @@
 .history
+.ft_printf_tester
 test.c
 a.out

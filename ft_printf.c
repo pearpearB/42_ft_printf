@@ -6,7 +6,7 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 13:25:05 by jabae             #+#    #+#             */
-/*   Updated: 2022/03/23 00:22:10 by jabae            ###   ########.fr       */
+/*   Updated: 2022/03/24 17:47:39 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@ int	ft_switch_format(va_list ap, const char *format, int *idx)
 	else if (format[*idx] == 'u')
 		return (ft_putunsignedint_count(va_arg(ap, int)));
 	else if (format[*idx] == 'x' || format[*idx] == 'X')
-		return (ft_puthex_count(va_arg(ap, int), ft_make_hexbase(format[*idx])));
+		return (ft_puthex_count(va_arg(ap, int), ft_make_hex(format[*idx])));
 	else if (format[*idx] == 'p')
-		return (ft_putpointer_count(va_arg(ap, unsigned long long), ft_make_hexbase('x')));
+		return (ft_putpointer_count(va_arg(ap, unsigned long long), ft_make_hex('x')));
 	else if (format[*idx] == 's')
-		return (ft_putstr_count(va_arg(ap, char *))); //
+		return (ft_putstr_count(va_arg(ap, char *)));
 	else if (format[*idx] == 'c')
-		return (ft_putchar_count(va_arg(ap, int))); //
+		return (ft_putchar_count(va_arg(ap, int)));
 	else if (format[*idx] == '%')
-		return (ft_putchar_count('%')); //
+		return (ft_putchar_count('%'));
 	else
 		return (-1);
 }
