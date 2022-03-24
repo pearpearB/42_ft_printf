@@ -6,13 +6,13 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 18:08:00 by jabae             #+#    #+#             */
-/*   Updated: 2022/03/24 18:17:26 by jabae            ###   ########.fr       */
+/*   Updated: 2022/03/24 18:55:49 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putstr_count(char *str)
+int	ft_putstr_count(char *str)
 {
 	size_t	str_len;
 
@@ -28,7 +28,7 @@ int ft_putstr_count(char *str)
 
 int	ft_putint_count(long long num)
 {
-	int count;
+	int	count;
 
 	if (!num)
 	{
@@ -52,7 +52,7 @@ int	ft_putint_count(long long num)
 
 int	ft_putunsignedint_count(unsigned int num)
 {
-	int count;
+	int	count;
 
 	ft_putnbr_fd(num, 1);
 	count = 1;
@@ -75,7 +75,7 @@ int	ft_puthex_count(unsigned int num, char *hexbase)
 	if (!num)
 	{
 		write(1, "0", 1);
-		return(1);
+		return (1);
 	}
 	idx = 0;
 	while (num && idx < 16)

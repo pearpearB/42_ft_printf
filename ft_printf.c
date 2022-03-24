@@ -6,7 +6,7 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 13:25:05 by jabae             #+#    #+#             */
-/*   Updated: 2022/03/24 18:12:09 by jabae            ###   ########.fr       */
+/*   Updated: 2022/03/24 18:57:16 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ int	ft_switch_format(va_list ap, const char *format, int *idx)
 	else if (format[*idx] == 'x' || format[*idx] == 'X')
 		return (ft_puthex_count(va_arg(ap, int), ft_make_hex(format[*idx])));
 	else if (format[*idx] == 'p')
-		return (ft_putpointer_count(va_arg(ap, unsigned long long), ft_make_hex('x')));
+		return (ft_putpointer_count(va_arg(ap, unsigned long long),
+				ft_make_hex('x')));
 	else if (format[*idx] == 's')
 		return (ft_putstr_count(va_arg(ap, char *)));
 	else if (format[*idx] == 'c')
