@@ -6,7 +6,7 @@
 #    By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 13:53:05 by jabae             #+#    #+#              #
-#    Updated: 2022/03/21 19:20:28 by jabae            ###   ########.fr        #
+#    Updated: 2022/03/24 18:14:38 by jabae            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ AR			  = ar
 ARFLAGS		= rcs
 
 SRCS		=	ft_printf.c\
+				ft_printf_format.c\
 				ft_printf_utils.c\
 
 OBJS		= $(SRCS:.c=.o)

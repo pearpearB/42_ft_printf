@@ -1,4 +1,6 @@
 .history
-.ft_printf_tester
+.vscode
+ft_printf_tester
+printfTester
 test.c
 a.out

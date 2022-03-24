@@ -6,12 +6,11 @@
 /*   By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 13:25:05 by jabae             #+#    #+#             */
-/*   Updated: 2022/03/24 17:47:39 by jabae            ###   ########.fr       */
+/*   Updated: 2022/03/24 18:12:09 by jabae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h> //////////// ! 제출 전 빼기
 
 int	ft_switch_format(va_list ap, const char *format, int *idx)
 {
