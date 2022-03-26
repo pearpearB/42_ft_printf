@@ -6,7 +6,7 @@
 #    By: jabae <jabae@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 13:53:05 by jabae             #+#    #+#              #
-#    Updated: 2022/03/26 13:24:22 by jabae            ###   ########.fr        #
+#    Updated: 2022/03/26 16:45:48 by jabae            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,6 @@ clean :
 fclean : clean
 	rm -f $(NAME)
 
-re:
-	fclean all
+re : fclean all
 
 .PHONY : all clean fclean re
